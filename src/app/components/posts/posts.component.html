@@ -1,0 +1,5 @@
+<section class="p-4 bg-slate-400">
+  <p>{{ welcome }}</p>
+  <p *ngIf="posts.length > 1; else noposts">{{ posts.length }} posts seen</p>
+  <ng-template #noposts>No posts found</ng-template>
+</section>
